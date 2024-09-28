@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: "14.161.8.65",
-  PORT: "1800",
-  USER: "mntor",
-  PASSWORD: "mntor123A@",
+  HOST: "",
+  PORT: "",
+  USER: "",
+  PASSWORD: "",
   DB: "MONITOR",
   dialect: "mssql",
   pool: {
