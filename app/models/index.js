@@ -18,6 +18,11 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+sequelize.authenticate()
+  .then(() => console.log('Connection has been established successfully.'))
+  .catch(err => console.error('Unable to connect to the database:', err));
+
+//db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
+db.tasks = require("./tasks.model.js")(sequelize, Sequelize);
 
 module.exports = db;
